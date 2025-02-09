@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,18 +20,27 @@
 
 // MODULES //
 
+var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench-harness' );
 var Float64Array = require( '@stdlib/array-float64' );
-var uniform = require( '@stdlib/random-base-uniform' );
+var randu = require( '@stdlib/random-base-randu' );
 var isnan = require( '@stdlib/math-base-assert-is-nan' );
 var EPS = require( '@stdlib/constants-float64-eps' );
+var tryRequire = require( '@stdlib/utils-try-require' );
 var pkg = require( './../package.json' ).name;
-var cdf = require( './../lib' );
+
+
+// VARIABLES //
+
+var cdf = tryRequire( resolve( __dirname, './../lib/native.js' ) );
+var opts = {
+	'skip': ( cdf instanceof Error )
+};
 
 
 // MAIN //
 
-bench( pkg, function benchmark( b ) {
+bench( pkg+'::native', opts, function benchmark( b ) {
 	var lambda;
 	var len;
 	var x;
@@ -42,44 +51,13 @@ bench( pkg, function benchmark( b ) {
 	x = new Float64Array( len );
 	lambda = new Float64Array( len );
 	for ( i = 0; i < len; i++ ) {
-		x[ i ] = uniform( 0.0, 100.0 );
-		lambda[ i ] = uniform( EPS, 100.0 );
+		x[ i ] = ( randu()*100.0 );
+		lambda[ i ] = ( randu()*100.0 ) + EPS;
 	}
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
 		y = cdf( x[ i % len ], lambda[ i % len ] );
-		if ( isnan( y ) ) {
-			b.fail( 'should not return NaN' );
-		}
-	}
-	b.toc();
-	if ( isnan( y ) ) {
-		b.fail( 'should not return NaN' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
-
-bench( pkg+':factory', function benchmark( b ) {
-	var lambda;
-	var mycdf;
-	var len;
-	var x;
-	var y;
-	var i;
-
-	lambda = 10.0;
-	mycdf = cdf.factory( lambda );
-	len = 100;
-	x = new Float64Array( len );
-	for ( i = 0; i < len; i++ ) {
-		x[ i ] = uniform( EPS, 100.0 );
-	}
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		y = mycdf( x[ i % len ] );
 		if ( isnan( y ) ) {
 			b.fail( 'should not return NaN' );
 		}

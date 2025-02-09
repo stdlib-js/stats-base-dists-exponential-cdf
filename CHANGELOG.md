@@ -2,6 +2,65 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-02-09)
+
+<section class="features">
+
+### Features
+
+-   [`8cfbf33`](https://github.com/stdlib-js/stdlib/commit/8cfbf331fbdfee66dfeec11c7e0f3e9829ed79cc) - add C implementation for `stats/base/dists/exponential/cdf` [(#4173)](https://github.com/stdlib-js/stdlib/pull/4173)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3580](https://github.com/stdlib-js/stdlib/issues/3580)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`8cfbf33`](https://github.com/stdlib-js/stdlib/commit/8cfbf331fbdfee66dfeec11c7e0f3e9829ed79cc) - **feat:** add C implementation for `stats/base/dists/exponential/cdf` [(#4173)](https://github.com/stdlib-js/stdlib/pull/4173) _(by Prashant Kumar Yadav, stdlib-bot, Philipp Burckhardt)_
+-   [`3250d4f`](https://github.com/stdlib-js/stdlib/commit/3250d4fb004a417dfd58fdc5a58d7efabc0f2b6e) - **bench:** refactor random number generation in `stats/base/dists/exponential` [(#4917)](https://github.com/stdlib-js/stdlib/pull/4917) _(by Karan Anand)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 3 people contributed to this release. Thank you to the following contributors:
+
+-   Karan Anand
+-   Philipp Burckhardt
+-   Prashant Kumar Yadav
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-28)
