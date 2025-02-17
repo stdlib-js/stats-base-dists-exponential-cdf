@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-14)
+## Unreleased (2025-02-17)
 
 <section class="features">
 
@@ -20,9 +20,9 @@
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#3580](https://github.com/stdlib-js/stdlib/issues/3580), [#5145](https://github.com/stdlib-js/stdlib/issues/5145)
+[#3580](https://github.com/stdlib-js/stdlib/issues/3580), [#5145](https://github.com/stdlib-js/stdlib/issues/5145), [#5234](https://github.com/stdlib-js/stdlib/issues/5234)
 
 </section>
 
@@ -34,6 +34,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`fc127d4`](https://github.com/stdlib-js/stdlib/commit/fc127d4f0cf0b49f32e19dbd65c724ae64d8f4e7) - **chore:** address commit comments and update tests [(#5265)](https://github.com/stdlib-js/stdlib/pull/5265) _(by Saurabh Singh)_
 -   [`25a369b`](https://github.com/stdlib-js/stdlib/commit/25a369b09bd828db38dc962afdb23b3c88fb8188) - **bench:** refactor number generation [(#5212)](https://github.com/stdlib-js/stdlib/pull/5212) _(by Harsh, Philipp Burckhardt)_
 -   [`8cfbf33`](https://github.com/stdlib-js/stdlib/commit/8cfbf331fbdfee66dfeec11c7e0f3e9829ed79cc) - **feat:** add C implementation for `stats/base/dists/exponential/cdf` [(#4173)](https://github.com/stdlib-js/stdlib/pull/4173) _(by Prashant Kumar Yadav, stdlib-bot, Philipp Burckhardt)_
 -   [`3250d4f`](https://github.com/stdlib-js/stdlib/commit/3250d4fb004a417dfd58fdc5a58d7efabc0f2b6e) - **bench:** refactor random number generation in `stats/base/dists/exponential` [(#4917)](https://github.com/stdlib-js/stdlib/pull/4917) _(by Karan Anand)_
@@ -48,12 +49,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Harsh
 -   Karan Anand
 -   Philipp Burckhardt
 -   Prashant Kumar Yadav
+-   Saurabh Singh
 
 </section>
 
