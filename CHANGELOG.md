@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-31)
+## Unreleased (2025-04-01)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
 -   [`7fc07a2`](https://github.com/stdlib-js/stdlib/commit/7fc07a2122bb9e862ae7e2237dd48096051199dd) - **docs:** fix missing section tags in various READMEs [(#5322)](https://github.com/stdlib-js/stdlib/pull/5322) _(by Saurabh Singh)_
 -   [`fc127d4`](https://github.com/stdlib-js/stdlib/commit/fc127d4f0cf0b49f32e19dbd65c724ae64d8f4e7) - **chore:** address commit comments and update tests [(#5265)](https://github.com/stdlib-js/stdlib/pull/5265) _(by Saurabh Singh)_
 -   [`25a369b`](https://github.com/stdlib-js/stdlib/commit/25a369b09bd828db38dc962afdb23b3c88fb8188) - **bench:** refactor number generation [(#5212)](https://github.com/stdlib-js/stdlib/pull/5212) _(by Harsh, Philipp Burckhardt)_
